@@ -8,6 +8,8 @@ export const SUSHI_CHAINLINK_TOKEN_LIST = 'https://token-list.sushi.com/chainlin
 
 export const ARBITRUM_LIST = 'https://bridge.arbitrum.io/token-list-42161.json'
 export const OPTIMISM_LIST = 'https://static.optimism.io/optimism.tokenlist.json'
+export const AURORA_LIST =
+  'https://raw.githubusercontent.com/yozh-io/lenbow-interface/master/src/config/token-list-aurora.json'
 
 // this is the default list of lists that are exposed to users
 // lower index == higher priority for token import
@@ -15,6 +17,7 @@ export const DEFAULT_TOKEN_LIST_OF_TOKEN_LISTS_TO_DISPLAY: string[] = [
   SUSHI_DEFAULT_TOKEN_LIST,
   SUSHI_CHAINLINK_TOKEN_LIST,
   OPTIMISM_LIST,
+  AURORA_LIST,
 ]
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [
@@ -23,4 +26,9 @@ export const DEFAULT_LIST_OF_LISTS: string[] = [
 ]
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS: string[] = [SUSHI_DEFAULT_TOKEN_LIST, SUSHI_CHAINLINK_TOKEN_LIST, OPTIMISM_LIST]
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = [
+  SUSHI_DEFAULT_TOKEN_LIST,
+  SUSHI_CHAINLINK_TOKEN_LIST,
+  OPTIMISM_LIST,
+  AURORA_LIST,
+]
